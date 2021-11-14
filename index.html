@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms test</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <h1>Test form</h1>
+    <hr>
+    <nav>
+        <a href="/index.html" class="link">Home</a>
+    </nav>
+    <section>
+        <form action="http://localhost:3000/users/" method="post" autocomplete="off">
+            <fieldset>
+              <legend>Registro de usuario</legend>
+      
+              <label for="name">Nombre:</label><br/>
+              <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required="true"/><br/>
+              
+              <label for="lastname">Apellido:</label><br/>
+              <input type="text" id="lastname" name="lastname" placeholder="Escribe tu apellido" required="true"/><br/>
+      
+              <label for="email">Email:</label><br/>
+              <input type="email" id="email" name="email" placeholder="example@gmail.com"/><br/>
+      
+              <label for="password">Contraseña:</label><br/>
+              <input type="password" id="password" name="password" placeholder="Escriba su contraseña" required="true"/><br/>
+      
+              <label>Validar:</label><br/>
+              <input type="checkbox" id="validated" name="validated" required="true" value=false>
+              <label for="validated">Validar</label><br/>
+
+              <label for="rol">Tipo de usuario:</label><br/>
+              <select id="rol" name="rol">
+                <option value="user" selected="true">User</option>
+                <option value="admin" hidden="true">Admin</option>
+              </select><br/>
+
+              <label hidden="true">Activo:</label><br/>
+              <input type="hidden" id="activo" name="activo" value="true"/>
+
+              <input type="submit" value="Enviar"/>
+              <input type="reset" value="Reestablecer valores"/>
+              <aside>By Elías T.</aside>
+            </fieldset>
+          </form>
+    </section>
+  </body>
+</html>
