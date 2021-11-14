@@ -1,4 +1,4 @@
-Número de Grupo: 7
+Número de Grupo: 40
 Nombre de Equipo: Lucky 7
 Integrantes y Roles:
 Cesar Fabián Garces Garces - Lider del equipo
