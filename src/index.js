@@ -1,6 +1,7 @@
 const express = require('express');
-const { swaggerServe, swaggerSetup } = require('./settings/swagger');
+const debug = require('debug')('app:main');
 
+const { swaggerServe, swaggerSetup } = require('./settings/swagger');
 const { connectDB } = require('./settings/db.connection');
 const { Config } = require('./settings/env.config');
 const routes = require('./routes/routes');
@@ -25,5 +26,5 @@ app.use(routes);
 
 //start server
 app.listen(Config.port, () => {
-    console.log('Server runing on port: ' + Config.port);
+    debug(`Servidor listening on port ${Config.port}`)
 })

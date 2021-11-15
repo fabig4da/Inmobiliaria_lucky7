@@ -1,8 +1,9 @@
-Número de Grupo: 40
-Nombre de Equipo: Lucky 7
-Integrantes y Roles:
-Cesar Fabián Garces Garces - Lider del equipo
-Juliana Alvarez Gallego - Administradora
-Rodrigo Sanchez Vasquez - Diseñador UI
-Ramón Elías Toro - Tester
-Harold Arenas (NO SE HA PRESENTADO DURANTE EL DESARROLLO DEL PROYECTO) - Diseñador de software
+# Proyecto ciclo 4 - Inmobiliaria
+### Número de Grupo: 40
+### Nombre de Equipo: Lucky 7
+#### Integrantes y Roles:
+1. Cesar Fabián Garces Garces - Lider del equipo
+2. Juliana Alvarez Gallego - Administradora
+3. Rodrigo Sanchez Vasquez - Diseñador UI
+4. Ramón Elías Toro - Tester
+5. Harold Arenas (NO SE HA PRESENTADO DURANTE EL DESARROLLO DEL PROYECTO) - Diseñador de software
