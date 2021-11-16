@@ -8,7 +8,7 @@ const openapiSpecification = swaggerJsdoc({
             version: '1.0',
             title: 'Inmobiliaria lucky7',
         },
-        servers: [{ url: 'https://localhost:3000' }]
+        servers: [{ url: 'http://localhost:3000' }]
     },
     apis: ['./src/routes/*.js', './src/models/*.js'] // files containing annotations as above
 });

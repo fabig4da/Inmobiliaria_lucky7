@@ -1,6 +1,33 @@
 const mongoose = require('mongoose');
 
 
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *      User:
+ *          type: object
+ *          properties:
+ *              name:
+ *                  type: string
+ *              lastname:
+ *                  type: string
+ *              email:
+ *                  type: string
+ *              password:
+ *                  type: string
+ *              validated:
+ *                  type: boolean
+ *              rol:
+ *                  type: boolean
+ *              activo:
+ *                  type: boolean
+ *          required:
+ *              -name
+ *              -lastname
+ *              -email
+ *              -password
+ */
 const userSchema = new mongoose.Schema({
     name: {
         type: String, //type of data

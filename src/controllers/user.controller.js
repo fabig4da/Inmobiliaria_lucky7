@@ -44,6 +44,19 @@ module.exports = {
 
     //update user properties
     updateUser: async(req, res) => {
+        const { name, lastname } = req.body;
+        const { id } = req.params;
+        const userFound = await User.findOne({ _id: id });
+        if (userFound && userFound.name) {
+            try {
+                userFound.name = name ? name : userFound.name;
+                userFound.lastname = lastname ? lastname : userFound.lastname;
+                await userFound.save();
+                Response.success(res, userFound);
+            } catch (err) {
+                Response.error(res);
+            }
+        }
 
     },
 
