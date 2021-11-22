@@ -60,7 +60,7 @@ const propertySchema = new mongoose.Schema({
     available: {
         type: Boolean
     }
-})
+});
 
 
 module.exports = mongoose.model('property', propertySchema);
