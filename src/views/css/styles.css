@@ -1,0 +1,84 @@
+html{
+    height: 100%;
+}
+
+header{
+    text-align: left;
+    font-size: 20px;
+    background-image: url(http://intelligenttech.org/DMIPA2020/images/val2.jpg);
+    width: 100%;
+    height: 15%;
+    border-radius: 5px;
+    box-shadow: 1px 0 4px rgba(0, 0, 0, .2);/*agrega una sombra alrededor de la etiqueta html en este caso la de section*/
+    margin-bottom: 15px;
+    padding: 30px;
+}
+
+.titulo{
+    text-align: left;
+    color: black;
+}
+
+input{
+    background-color: #fff;
+    color: black;
+}
+.extendInput{
+    width: 20%;
+}
+input::placeholder{
+    color: #6d7070;
+}
+.boton{
+    background-color: #1f53c5;
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.boton:hover{
+    background-color: #32f1e2;
+    color: #000;
+}
+
+.link{
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+section{
+    float: left;
+}
+
+.section1{
+    float: left;
+    width: 75%;/*Es el espacio que ocupa la seccion*/
+    background: #000;
+    opacity: 0.45;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 0 4px rgba(0, 0, 0, .2);/*agrega una sombra alrededor de la etiqueta html en este caso la de section*/
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.imgBorderR{
+    border-radius: 15px;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    color: #79f1c3;
+    box-shadow: inset 5px 0 5px -5px #fff;/*el inset pone la sombra en el lado interno*/
+}
+
+
+

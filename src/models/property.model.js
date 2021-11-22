@@ -5,6 +5,9 @@ const propertySchema = new mongoose.Schema({
     name: {
         type: String
     },
+    images: {
+        type: String
+    },
     description: {
         type: String
     },
@@ -23,10 +26,13 @@ const propertySchema = new mongoose.Schema({
     zone: {
         type: String
     },
+    neighborhood: {
+        type: String
+    },
     available: {
         type: Boolean
     }
-})
+});
 
 
 module.exports = mongoose.model('property', propertySchema);

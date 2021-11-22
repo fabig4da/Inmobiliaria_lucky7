@@ -5,8 +5,8 @@ const { Response } = require('../utils/response');
 module.exports = {
     findAllProperty: async(req, res) => {
         try {
-            const propertyFouds = await Property.find();
-            Response.success(res, propertyFouds);
+            const propertyFound = await Property.find();
+            Response.success(res, propertyFound);
         } catch (error) {
             Response.error(res);
         }
@@ -14,8 +14,8 @@ module.exports = {
     findOneProperty: async(req, res) => {
         const { id } = req.params;
         try {
-            const propertyFouds = await Property.findOne({ _id: id });
-            Response.success(res, propertyFouds);
+            const propertyFound = await Property.findOne({ _id: id });
+            Response.success(res, propertyFound);
         } catch (error) {
             Response.error(res);
         }
@@ -44,8 +44,8 @@ module.exports = {
     deleteProperty: async(req, res) => {
         const { id } = req.params;
         try {
-            const propertydeleted = await Property.findByIdAndDelete(id);
-            Response.success(res, propertydeleted);
+            const propertyDeleted = await Property.findByIdAndDelete(id);
+            Response.success(res, propertyDeleted);
         } catch (error) {
             console.log(error);
             Response.error(res);
