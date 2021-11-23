@@ -6,4 +6,3 @@
 2. Juliana Alvarez Gallego - Administradora
 3. Rodrigo Sanchez Vasquez - Diseñador UI
 4. Ramón Elías Toro - Tester
-5. Harold Arenas (NO SE HA PRESENTADO DURANTE EL DESARROLLO DEL PROYECTO) - Diseñador de software
