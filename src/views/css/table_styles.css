@@ -1,0 +1,48 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+table, th, td{
+    color: black;
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+table{
+    width: 100%;
+}
+caption{
+    color: #e63946;
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    line-height: 70px;
+}
+th{
+    color: #f1faee;
+    background-color: #1d3557;
+}
+tr:nth-child(even){
+    /*Renglones pares*/
+    background-color: #94d2bd;
+}
+tr:nth-child(odd){
+    /*Renglones impares*/
+    background-color: #bee1e6;
+}
+
+.sectionTable{
+    float: left;
+    margin-top: 12%;
+    width: 75%;/*Es el espacio que ocupa la seccion*/
+    background: #000;
+    opacity: 0.80;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 0 4px rgba(0, 0, 0, .2);/*agrega una sombra alrededor de la etiqueta html en este caso la de section*/
+    padding: 15px;
+}

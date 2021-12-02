@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Inmuebles</title>
     <script src='../scripts/index_menu.js'></script>
     <link rel="stylesheet" href="../css/menu_style.css"/>
@@ -21,124 +21,121 @@
             <i class='bx bx-menu' id='btn'></i>
         </div>
         <ul class="nav_list">
-          <li>
-              <a href="../index.html">
-                  <i class='bx bx-home' ></i>
-                  <span class="links_name">Home</span>
-              </a>
-              <span class="tooltip">Home</span>
-          </li>
-          <li>
-              <a href="./user_register.html">
-                  <i class='bx bx-user' ></i>
-                  <span class="links_name">Usuario</span>
-              </a>
-              <span class="tooltip">Usuario</span>
-          </li>
-          <li>
-              <a href="./property_register.html">
-                  <i class='bx bx-building-house' ></i>
-                  <span class="links_name">Inmueble</span>
-              </a>
-              <span class="tooltip">Inmueble</span>
-          </li>
-          <li>
-              <a href="./mission.html">
-                  <i class='bx bx-flag' ></i>
-                  <span class="links_name">Misión</span>
-              </a>
-              <span class="tooltip">Misión</span>
-          </li>
-          <li>
-              <a href="./vision.html">
-                  <i class='bx bx-target-lock' ></i>
-                  <span class="links_name">Visión</span>
-              </a>
-              <span class="tooltip">Visión</span>
-          </li>
-          <li>
-              <a href="./contact.html">
-                  <i class='bx bxs-contact' ></i>
-                  <span class="links_name">Contacto</span>
-              </a>
-              <span class="tooltip">Contacto</span>
-          </li>
-        </ul>
-        <div class="profile_content">
-            <div class="profile">
-                <div class="profile_details">
-                    <img src="../images/profile1.jpg" alt="profile image">
-                    <div class="name_job">
-                        <div class="name">Elías T.</div>
-                        <div class="job">Web Developer</div>
+            <li>
+                <a href="../index.html">
+                    <i class='bx bx-home' ></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="./users_table.html">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">Usuario</span>
+                </a>
+                <span class="tooltip">Usuario</span>
+            </li>
+            <li>
+                <a href="./properties_table.html">
+                    <i class='bx bx-building-house' ></i>
+                    <span class="links_name">Inmueble</span>
+                </a>
+                <span class="tooltip">Inmueble</span>
+            </li>
+            <li>
+                <a href="./mission.html">
+                    <i class='bx bx-flag' ></i>
+                    <span class="links_name">Misión</span>
+                </a>
+                <span class="tooltip">Misión</span>
+            </li>
+            <li>
+                <a href="./vision.html">
+                    <i class='bx bx-target-lock' ></i>
+                    <span class="links_name">Visión</span>
+                </a>
+                <span class="tooltip">Visión</span>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    <i class='bx bxs-contact' ></i>
+                    <span class="links_name">Contacto</span>
+                </a>
+                <span class="tooltip">Contacto</span>
+            </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="../images/profile1.jpg" alt="profile image">
+                        <div class="name_job">
+                            <div class="name">Elías T.</div>
+                            <div class="job">Web Developer</div>
+                        </div>
                     </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
                 </div>
-                <i class='bx bx-log-out' id="log_out"></i>
             </div>
         </div>
-    </div>
-    <div class="home_content">
-      <header>
-        <h1 class="titulo"> Test form</h1>
-      </header>
-      <section class="form-register">
-          <h4>Formulario Registro</h4>
-          <form action="http://localhost:3000/properties/" method="post" autocomplete="off">
+        <div class="home_content">
+        <section class="form-register">
+            <h4>Formulario Registro</h4>
+            <form action="http://localhost:3000/properties/" method="post" autocomplete="off">
             <fieldset class="marco">
-              <legend>Registro de inmuebles</legend>
-      
-              <label for="name">Título:</label><br/>
-              <input class="controls" type="text" id="name" name="name" placeholder="Título de  la publicación" required="true"/><br/>
-              
-              <label for="images">Imagenes:</label><br/>
-              <input class="controls" type="file" id="images" name="images" required="true"/><br/>
-      
-              <label for="description">Descripción:</label><br/>
-              <input class="controls" type="text" id="description" name="description" placeholder="Descripción corta"/><br/>
-      
-              <label for="bedrooms">Cantidad de habitaciones:</label><br/>
-              <input class="controls" type="text" id="bedrooms" name="bedrooms" placeholder="0" required="true"/><br/>
+                <legend>Registro de inmuebles</legend>
+        
+                <label for="name">Título:</label><br/>
+                <input class="controls" type="text" id="name" name="name" placeholder="Título de  la publicación" required="true"/><br/>
+                
+                <label for="images">Imagenes:</label><br/>
+                <input class="controls" type="file" id="images" name="images" required="true"/><br/>
+        
+                <label for="description">Descripción:</label><br/>
+                <input class="controls" type="text" id="description" name="description" placeholder="Descripción corta"/><br/>
+        
+                <label for="bedrooms">Cantidad de habitaciones:</label><br/>
+                <input class="controls" type="text" id="bedrooms" name="bedrooms" placeholder="0" required="true"/><br/>
 
-              <label for="bathrooms">Cantidad de baños:</label><br/>
-              <input class="controls" type="text" id="bathrooms" name="bathrooms" placeholder="0" required="true"/><br/>
+                <label for="bathrooms">Cantidad de baños:</label><br/>
+                <input class="controls" type="text" id="bathrooms" name="bathrooms" placeholder="0" required="true"/><br/>
 
-              <label for="city">Ciudad:</label><br/>
-              <select class="controls" id="city" name="city" required="true">
+                <label for="city">Ciudad:</label><br/>
+                <select class="controls" id="city" name="city" required="true">
                 <option selected="true">Seleccione una opción</option>
                 <option value="bogota">Bogotá</option>
                 <option value="cali">Cali</option>
                 <option value="medellin">Medellín</option>
                 <option value="armenia">Armenia</option>
                 <option value="pereira">Pereira</option>
-              </select><br/>
+                </select><br/>
 
-              <label for="address">Dirección:</label><br/>
-              <input class="controls" type="text" id="address" name="address" placeholder="inserte dirección del inmueble" required="true"/><br/>
+                <label for="address">Dirección:</label><br/>
+                <input class="controls" type="text" id="address" name="address" placeholder="inserte dirección del inmueble" required="true"/><br/>
 
-              <label for="zone">Zona:</label><br/>
-              <select class="controls" id="zone" name="zone" required="true">
+                <label for="zone">Zona:</label><br/>
+                <select class="controls" id="zone" name="zone" required="true">
                 <option selected="true">Seleccione una opción</option>
                 <option value="norte">Norte</option>
                 <option value="sur">Sur</option>
                 <option value="este">Este</option>
                 <option value="oeste">Oeste</option>
                 <option value="occidente">Occidente</option>
-              </select><br/>
+                </select><br/>
 
-              <label for="neighborhood">Barrio:</label><br/>
-              <input class="controls" type="text" id="neighborhood" name="neighborhood" placeholder="Barrio donde se ubica el inmueble" required="true"/><br/>
+                <label for="neighborhood">Barrio:</label><br/>
+                <input class="controls" type="text" id="neighborhood" name="neighborhood" placeholder="Barrio donde se ubica el inmueble" required="true"/><br/>
 
-              <select class="controls" id="available" name="available" required="true">
+                <select class="controls" id="available" name="available" required="true">
                 <option selected="true">Seleccione una opción</option>
                 <option value="true">Disponible</option>
                 <option value="false">No disponible</option>
-              </select><br/><br/>
+                </select><br/><br/>
 
-              <input class="boton" type="submit" value="Enviar"/>
-              <input class="boton" type="reset" value="Reestablecer valores"/>
+                <input class="boton" type="submit" value="Enviar"/>
+                <input class="boton" type="reset" value="Reestablecer valores"/>
             </fieldset>
-          </form>
-      </section>
+            </form>
+        </section>
     </div>
 </body>
 </html>

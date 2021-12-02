@@ -202,9 +202,18 @@ body{
     transition: all 0.4s ease;
     background: #1d1b31;
 }
+.profile #log_out:hover{
+    color: #11101d;
+    background: #fff;
+}
 .sidebar.active .profile #log_out{
     left: 88%;
     background: none;
+}
+.sidebar.active .profile #log_out:hover{
+    left: 88%;
+    color: #11101d;
+    background: #fff;
 }
 .home_content{
     position: absolute;
@@ -219,6 +228,7 @@ body{
     color: #1d1b31;
     margin: 12px;
 }
+
 .sidebar.active ~ .home_content{
     width: calc(100% - 240px);
     left: 240px;

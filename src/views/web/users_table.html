@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Inmuebles</title>
+    <script src='../scripts/index_menu.js'></script>
+    <link rel="stylesheet" href="../css/menu_style.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/forms_styles.css"/>
+    <link rel="stylesheet" href="../css/table_styles.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <image src="https://uploads-ssl.webflow.com/58646eab48ddaea33e981106/58da9320e4118aa50b528c26_WhiteLogo.png" width="30px" height="20px"/>
+                <div class="logo_name">Ltda.</div>
+            </div>
+            <i class='bx bx-menu' id='btn'></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="../index.html">
+                    <i class='bx bx-home' ></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="./users_table.html">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">Usuario</span>
+                </a>
+                <span class="tooltip">Usuario</span>
+            </li>
+            <li>
+                <a href="./properties_table.html">
+                    <i class='bx bx-building-house' ></i>
+                    <span class="links_name">Inmueble</span>
+                </a>
+                <span class="tooltip">Inmueble</span>
+            </li>
+            <li>
+                <a href="./mission.html">
+                    <i class='bx bx-flag' ></i>
+                    <span class="links_name">Misión</span>
+                </a>
+                <span class="tooltip">Misión</span>
+            </li>
+            <li>
+                <a href="./vision.html">
+                    <i class='bx bx-target-lock' ></i>
+                    <span class="links_name">Visión</span>
+                </a>
+                <span class="tooltip">Visión</span>
+            </li>
+            <li>
+                <a href="./contact.html">
+                    <i class='bx bxs-contact' ></i>
+                    <span class="links_name">Contacto</span>
+                </a>
+                <span class="tooltip">Contacto</span>
+            </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="../images/profile1.jpg" alt="profile image">
+                        <div class="name_job">
+                            <div class="name">Elías T.</div>
+                            <div class="job">Web Developer</div>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out' id="log_out"></i>
+                </div>
+            </div>
+        </div>
+        <div class="home_content">
+        <section class="sectionTable">
+            <h4>Tabla de usuarios registrados</h4>
+            <hr>
+            <br/>
+            <table>
+                <caption>Listado de personas</caption>
+                <a href="./user_register.html" class="boton">Nuevo Registro</a>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>E-mail</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Elias</td>
+                    <td>Toro</td>
+                    <td>etoro@gmail.com</td>
+                    <td>Admin</td>
+                    <td>
+                        <button type="button">Editar</button><br/>
+                        <button type="button">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Juanito</td>
+                    <td>Calamar</td>
+                    <td>juancalamarito@gmail.com</td>
+                    <td>User</td>
+                    <td>
+                        <button type="button">Editar</button><br/>
+                        <button type="button">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Juliana</td>
+                    <td>Lozano</td>
+                    <td>jlozano@gmail.com</td>
+                    <td>User</td>
+                    <td>
+                        <button type="button">Editar</button><br/>
+                        <button type="button">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Mauro</td>
+                    <td>Picotto</td>
+                    <td>mpicotto@gmail.com</td>
+                    <td>User</td>
+                    <td>
+                        <button type="button">Editar</button><br/>
+                        <button type="button">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>Karen</td>
+                    <td>Rojas</td>
+                    <td>krojas@gmail.com</td>
+                    <td>User</td>
+                    <td>
+                        <button type="button">Editar</button><br/>
+                        <button type="button">Eliminar</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
