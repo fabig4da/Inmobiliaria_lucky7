@@ -14,7 +14,7 @@ table, th, td{
     text-align: center;
 }
 table{
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 caption{
@@ -25,7 +25,7 @@ caption{
 }
 th{
     color: #f1faee;
-    background-color: #1d3557
+    background-color: #1d3557;
 }
 tr:nth-child(even){
     /*Renglones pares*/
@@ -42,7 +42,7 @@ tr:nth-child(odd){
     width: 85%;
     background: rgba(0, 0, 0, 0.50);
     color: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 1px 0 4px rgba(0, 0, 0, .2);/*agrega una sombra alrededor de la etiqueta html en este caso la de section*/
     padding: 15px;
 }

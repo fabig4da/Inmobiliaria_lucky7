@@ -18,6 +18,14 @@ header{
     padding: 30px;
 }
 
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: auto;
+    background: linear-gradient(#8be4f0, #04abc9, #22223f);
+}
+
 .titulo{
     text-align: center;
     color: black;

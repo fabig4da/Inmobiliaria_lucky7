@@ -20,7 +20,7 @@
         <div>
             <section class="form-register">
                 <h4>Formulario Registro</h4>
-                <form action="http://localhost:3000/properties/" method="post" autocomplete="off">
+                <form action="/properties" method="post" autocomplete="off">
                 <fieldset class="marco">
                     <legend>Registro de inmuebles</legend>
             
@@ -64,7 +64,8 @@
     
                     <label for="neighborhood">Barrio:</label><br/>
                     <input class="controls" type="text" id="neighborhood" name="neighborhood" placeholder="Barrio donde se ubica el inmueble" required="true"/><br/>
-    
+                    
+                    <label for="available">Disponibilidad:</label><br/>
                     <select class="controls" id="available" name="available" required="true">
                     <option selected="true">Seleccione una opción</option>
                     <option value="true">Disponible</option>

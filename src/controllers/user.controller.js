@@ -8,12 +8,10 @@ module.exports = {
         try {
             const usersFound = await User.find();
             Response.success(res, usersFound);
-
         } catch (error) {
             console.log(error);
             Response.error(res);
         }
-
     },
     // find one user by id 
     findOneUser: async(req, res) => {
