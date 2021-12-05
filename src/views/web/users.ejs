@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <script src='../scripts/index_menu.js'></script>
+    <link rel="stylesheet" href="../css/menu_style.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/forms_styles.css"/>
+    <link rel="stylesheet" href="../css/table_styles.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header.ejs'); %>
+    </header>
+    <main>
+        <div>
+            <section class="sectionTable">
+                <h4>Tabla de usuarios registrados</h4>
+                <hr>
+                <br/>
+                <table>
+                    <caption>Listado de personas</caption>
+                    <a href="/user_signUp" class="tableRegButton">Nuevo Registro</a>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>E-mail</th>
+                        <th>Password</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                    <%usersList.forEach(user => {%>
+                        <tr>
+                            <td><%= user._id %></td>
+                            <td><%= user.name %></td>
+                            <td><%= user.lastname %></td>
+                            <td><%= user.email %></td>
+                            <td><%= user.password %></td>
+                            <td><%= user.rol %></td>
+                            <td>
+                                <button type="button" class="tableEditButton">Editar</button><br/>
+                                <button type="button" class="tableDelButton">Eliminar</button>
+                            </td>
+                        </tr>
+                    <%})%>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer class="ftr">
+        <%- include('../partials/footer.ejs'); %>
+    </footer>
+</body>
+</html>

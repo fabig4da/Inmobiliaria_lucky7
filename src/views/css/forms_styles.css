@@ -6,7 +6,7 @@
 
   .form-register {
     width: 70%;
-    background: #24303c;
+    background: rgba(36, 48, 61, 0.50);
     padding: 15px;
     margin: auto;
     margin-top: 100px;
@@ -14,7 +14,7 @@
     font-family: 'calibri';
     color: #fff;
     box-shadow: 7px 13px 37px #000;
-    opacity: 0.70;
+    text-align: center;
   }
   
   .form-register h4 {
@@ -32,6 +32,7 @@
     font-family: 'calibri';
     font-size: 15px;
     color: white;
+    margin: auto;
   }
 
   .marco {
@@ -49,3 +50,4 @@
     border-image: initial;
     border-radius: 10px;
 }
+

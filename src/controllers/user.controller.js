@@ -7,7 +7,6 @@ module.exports = {
     findAllUser: async(req, res) => {
         try {
             const usersFound = await User.find();
-            console.log(usersFound)
             Response.success(res, usersFound);
 
         } catch (error) {

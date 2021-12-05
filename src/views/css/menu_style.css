@@ -10,7 +10,7 @@ body{
     position: relative;
     min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     background: linear-gradient(#8be4f0, #04abc9, #22223f);
 }
 .sidebar{
@@ -25,10 +25,6 @@ body{
 }
 .sidebar.active{
     width: 240px;
-}
-.sidebar .bx-menu:hover{
-    background: #41e2c7;
-    border-radius: 10px;
 }
 .sidebar .logo_content .logo{
     color: #fff;
@@ -63,6 +59,11 @@ body{
     text-align: center;
     line-height: 50px;
     transform: translateX(-50%);
+}
+.sidebar #btn:hover {
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
 }
 .sidebar.active #btn{
     left: 90%;

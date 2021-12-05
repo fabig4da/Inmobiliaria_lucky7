@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Register</title>
+    <script src='../scripts/index_menu.js'></script>
+    <link rel="stylesheet" href="../css/menu_style.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/forms_styles.css"/>
+    <link rel="stylesheet" href="../css/table_styles.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header.ejs'); %>
+    </header>
+    <main>
+        <section class="form-register">
+            <h4>Formulario De Registro</h4>
+            <form action="http://localhost:3000/users/" method="post" autocomplete="off">
+                <fieldset class="marco">
+                    <legend>Registro de usuario</legend>
+            
+                    <label for="name">Nombre:</label><br/>
+                    <input class="controls" type="text" id="name" name="name" placeholder="Escribe tu nombre" required="true"/><br/>
+                    
+                    <label for="lastname">Apellido:</label><br/>
+                    <input class="controls" type="text" id="lastname" name="lastname" placeholder="Escribe tu apellido" required="true"/><br/>
+            
+                    <label for="email">Email:</label><br/>
+                    <input class="controls" type="email" id="email" name="email" placeholder="example@gmail.com"/><br/>
+            
+                    <label for="password">Contraseña:</label><br/>
+                    <input class="controls" type="password" id="password" name="password" placeholder="Escriba su contraseña" required="true"/><br/>
+            
+                    <label>Validar:</label><br/>
+                    <input type="checkbox" id="validated" name="validated" required="true" value=false>
+                    <label for="validated">Validar</label><br/>
+    
+                    <label for="rol">Tipo de usuario:</label><br/>
+                    <select class="controls" id="rol" name="rol">
+                    <option value="user" selected="true">User</option>
+                    <option value="admin" hidden="true">Admin</option>
+                    </select><br/>
+    
+                    <label hidden="true">Activo:</label><br/>
+                    <input type="hidden" id="activo" name="activo" value="true"/>
+    
+                    <input class="boton" type="submit" value="Enviar"/>
+                    <input class="boton" type="reset" value="Reestablecer valores"/>
+                </fieldset>
+                </form>
+        </section>
+    </div>
+    </main><br/>
+    <footer class="ftr">
+        <%- include('../partials/footer.ejs'); %>
+    </footer>
+</body>
+</html>

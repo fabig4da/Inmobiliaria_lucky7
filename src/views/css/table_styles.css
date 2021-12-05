@@ -14,17 +14,18 @@ table, th, td{
     text-align: center;
 }
 table{
-    width: 100%;
+    width: 80%;
+    margin: auto;
 }
 caption{
-    color: #e63946;
+    color: #fff;
     font-family: "Poppins", sans-serif;
     font-size: 45px;
     line-height: 70px;
 }
 th{
     color: #f1faee;
-    background-color: #1d3557;
+    background-color: #1d3557
 }
 tr:nth-child(even){
     /*Renglones pares*/
@@ -36,13 +37,56 @@ tr:nth-child(odd){
 }
 
 .sectionTable{
-    float: left;
-    margin-top: 12%;
-    width: 75%;/*Es el espacio que ocupa la seccion*/
-    background: #000;
-    opacity: 0.80;
+    display: block;
+    margin: auto;
+    width: 85%;
+    background: rgba(0, 0, 0, 0.50);
     color: #fff;
     border-radius: 5px;
     box-shadow: 1px 0 4px rgba(0, 0, 0, .2);/*agrega una sombra alrededor de la etiqueta html en este caso la de section*/
     padding: 15px;
+}
+
+.tableEditButton{
+    background-color: #1f53c5;
+    border-radius: 12px;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+.tableEditButton:hover{
+    background-color: #32f1e2;
+    color: #000;
+}
+
+.tableDelButton{
+    background-color: #a1010e;
+    border-radius: 12px;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+.tableDelButton:hover{
+    background-color: #ff2537;
+}
+
+.tableRegButton{
+    background-color: #028635;
+    border-radius: 10px 0 10px 0;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+}
+
+.tableRegButton:hover{
+    background-color: #34fd81;
+    color: #000;
 }

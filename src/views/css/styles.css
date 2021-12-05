@@ -16,11 +16,10 @@ header{
     box-shadow: 1px 0 4px rgba(0, 0, 0, .2);/*agrega una sombra alrededor de la etiqueta html en este caso la de section*/
     margin-bottom: 15px;
     padding: 30px;
-    
 }
 
 .titulo{
-    text-align: left;
+    text-align: center;
     color: black;
 }
 
@@ -57,14 +56,15 @@ input::placeholder{
 }
 
 section{
-    float: left;
+    align-items: center;
 }
 
 .section1{
-    float: left;
-    width: 75%;/*Es el espacio que ocupa la seccion*/
-    background: #000;
-    opacity: 0.45;
+    align-items: center;
+    display: block;
+    margin: auto;
+    width: 65%;/*Es el espacio que ocupa la seccion*/
+    background: rgba(0, 0, 0, 0.445);
     color: #fff;
     border-radius: 5px;
     box-shadow: 1px 0 4px rgba(0, 0, 0, .2);/*agrega una sombra alrededor de la etiqueta html en este caso la de section*/
@@ -74,27 +74,18 @@ section{
 
 .imgBorderR{
     border-radius: 15px;
+    display: block;
+    margin: auto;
 }
 
-aside{
-    float: right;
-    width: 30%;
-    padding: 5px;
-    margin: 5px;
-    font-style: italic;
-    color: #79f1c3;
-    box-shadow: inset 5px 0 5px -5px #fff;/*el inset pone la sombra en el lado interno*/
-}
-
-footer {
-    position: fixed;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 810px 0px;
-    width: 100%;
-    height: 100px;
+.ftr {
     text-align: center;
     color: #fff;
-    padding: 35px;
+    margin-top: 15px;
+}
+
+.testAlignment{
+    text-align: center;
+    
 }
 

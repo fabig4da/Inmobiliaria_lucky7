@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <script src='../scripts/index_menu.js'></script>
+    <link rel="stylesheet" href="../css/menu_style.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/forms_styles.css"/>
+    <link rel="stylesheet" href="../css/table_styles.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header.ejs'); %>
+    </header>
+    <main>
+        <div>
+            <section class="sectionTable">
+                <h4>Tabla de inmuebles registrados</h4>
+                <hr>
+                <br/>
+                <table>
+                    <caption>Listado de inmuebles</caption>
+                    <a href="/property_register" class="tableRegButton">Nuevo Registro</a>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Imagenes</th>
+                        <th>Habitaciones</th>
+                        <th>Baños</th>
+                        <th>Ciudad</th>
+                        <th>Dirección</th>
+                        <th>Zona</th>
+                        <th>Barrio</th>
+                        <th>Acciones</th>
+                    </tr>
+                    <%propertiesList.forEach(property => {%>
+                        <tr>
+                            <td><%= property._id %></td>
+                            <td><%= property.name %></td>
+                            <td><%= property.images %></td>
+                            <td><%= property.bedrooms %></td>
+                            <td><%= property.bathrooms %></td>
+                            <td><%= property.city %></td>
+                            <td><%= property.address %></td>
+                            <td><%= property.zone %></td>
+                            <td><%= property.neighborhood %></td>
+                            <td>
+                                <button type="button" class="tableEditButton">Editar</button><br/>
+                                <button type="button" class="tableDelButton">Eliminar</button>
+                            </td>
+                        </tr>
+                    <%})%>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer class="ftr">
+        <%- include('../partials/footer.ejs'); %>
+    </footer>
+</body>
+</html>
