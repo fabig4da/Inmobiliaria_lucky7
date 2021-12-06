@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src='./scripts/index_menu.js'></script>
+    <link rel="stylesheet" href="../css/menu_style.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/login_styles.css"/>
+    <link rel="stylesheet" href="../css/table_styles.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2>Login</h2>
+            <form id="form" name="form" method="post">
+                <div class="element">
+                    <label for="user">User</label>
+                    <input type="text" id="user" name="user" placeholder="Type your username" required="true"/>
+                </div>
+                <div class="element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Type your password" required="true"/>
+                </div>
+                <div class="element">
+                    <input type="submit" value="Send"/>
+                </div><br/>
+                <div class="element">
+                    <label class="labelLog">¿No tiene cuenta?</label><br/>
+                    <a href="/user_signUp" class="loginRegButton">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </main> <br/>
+    <footer class="ftr">
+        <%- include('../partials/footer.ejs'); %>
+    </footer>
+</body>
+</html>

@@ -60,6 +60,12 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+//login page
+app.get('/login', (req, res) => {
+    res.render('login');
+});
+
+
 //db connection
 connectDB(Config.mongoUri);
 
