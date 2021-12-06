@@ -1,5 +1,6 @@
 const User = require('../models/user.model');
 const { Response } = require('../utils/response');
+const { encriptPassword } = require('../utils/encript');
 
 
 module.exports = {
@@ -33,6 +34,7 @@ module.exports = {
     createUser: async(req, res) => {
         const { body } = req;
         const user = new User(body);
+        user.password = encriptPassword(body.password);
         try {
             await user.save();
             Response.success(res, user);

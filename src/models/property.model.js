@@ -16,11 +16,15 @@ const mongoose = require('mongoose');
  *                  type: number
  *              bathroom:
  *                  type: number
- *              ciudad:
+ *              city:
  *                  type: string
  *              address:
  *                  type: string
  *              zone:
+ *                  type: string
+ *              neighborhood:
+ *                  type: string
+ *              images:
  *                  type: string
  *              available:
  *                  type: boolean
@@ -48,12 +52,18 @@ const propertySchema = new mongoose.Schema({
     bathroom: {
         type: Number
     },
-    ciudad: {
+    city: {
         type: String
     },
     address: {
         type: String
     },
+    neighborhood: {
+        type: String
+    },
+    // images: {
+    //     type: String
+    // },
     zone: {
         type: String
     },
