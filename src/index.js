@@ -28,6 +28,7 @@ app.use('/doc', swaggerServe, swaggerSetup);
 
 //routes
 app.use(routes);
+//
 app.use('/', express.static(path.join(__dirname, '../public')))
 
 

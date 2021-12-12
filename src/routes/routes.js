@@ -8,7 +8,7 @@ const path = require('path');
 
 const routes = express();
 // routes.use(fileupload());
-
+//
 
 routes.get('/image/:name', (req, res) => {
     const { name } = req.params;
