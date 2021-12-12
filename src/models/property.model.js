@@ -61,9 +61,9 @@ const propertySchema = new mongoose.Schema({
     neighborhood: {
         type: String
     },
-    // images: {
-    //     type: String
-    // },
+    images: {
+        type: String
+    },
     zone: {
         type: String
     },

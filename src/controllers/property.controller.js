@@ -1,4 +1,5 @@
 const Property = require('../models/property.model');
+const { loadArchivo, deleteArchivo } = require('../settings/images');
 const { Response } = require('../utils/response');
 
 
@@ -22,7 +23,9 @@ module.exports = {
     },
     createProperty: async(req, res) => {
         const { body } = req;
+        console.log(body);
         const property = new Property(body);
+        property.images = loadArchivo(req.files, '/src/uploads')
         try {
             await property.save();
             Response.success(res, property);
@@ -37,6 +40,7 @@ module.exports = {
         const { id } = req.params;
         try {
             const propertydeleted = await Property.findByIdAndDelete(id);
+            deleteArchivo(propertydeleted.images)
             Response.success(res, propertydeleted);
         } catch (error) {
             console.log(error);

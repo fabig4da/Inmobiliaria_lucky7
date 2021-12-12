@@ -1,6 +1,9 @@
 const express = require('express');
 const debug = require('debug')('app:main');
 const cors = require('cors');
+const fileupload = require('express-fileupload');
+const path = require('path');
+
 
 const { swaggerServe, swaggerSetup } = require('./settings/swagger');
 const { connectDB } = require('./settings/db.connection');
@@ -16,6 +19,7 @@ connectDB(Config.mongoUri);
 
 //midlewares
 app.use(express.urlencoded({ extended: false }));
+app.use(fileupload());
 app.use(express.json());
 app.use(cors());
 app.use('/doc', swaggerServe, swaggerSetup);
@@ -24,6 +28,7 @@ app.use('/doc', swaggerServe, swaggerSetup);
 
 //routes
 app.use(routes);
+app.use('/', express.static(path.join(__dirname, '../public')))
 
 
 //start server
